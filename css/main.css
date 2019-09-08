@@ -6,7 +6,7 @@ body{
 	font-size: 18px;
 	font-family: 'Exo', sans-serif;
 	color: #f0f0f0;
-}
+}/*deals with background and text8*/
 .accentHeader{
 	text-align: right;
 	margin-right: auto;
@@ -48,7 +48,7 @@ body{
 }
 .accentFooter{
 	text-align: center;
-}
+}/*text*/
 .title{ grid-area: title; }
 .div1{ grid-area: div1; }
 .div2{ grid-area: div2; }
@@ -78,7 +78,7 @@ body{
 .grid-container > div{
 	background-color:hsl(0%, 0%, 0%);
 	padding: 20px 0;
-}
+}/*grid*/
 p{
 	margin-bottom: 0px;
 	margin-top: 0px;
@@ -93,7 +93,7 @@ p{
 }
 .floatLeft{
 	float: left;
-}
+}/*spacing*/
 .imageDiv1{
 	padding-right: 10px;
 	padding-top: 10px;
@@ -109,7 +109,7 @@ p{
 	border-color: #3677e3;
 	border-width: 8px;
 	border-style: solid;
-}
+}/*image styling*/
 .youtube{
 	padding-left: 500;
 	border-color: #3677e3;
