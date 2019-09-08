@@ -53,8 +53,6 @@ body{
 .div1{ grid-area: div1; }
 .div2{ grid-area: div2; }
 .div3{ grid-area: div3; }
-.div4{ grid-area: div4; }
-.div5{ grid-area: div5; }
 .footer{ grid-area: footer; }
 
 .grid-container{
@@ -64,7 +62,6 @@ body{
     'title title title title title title'
     'div1 div1 div1 div2 div2 div2'
     'div3 div3 div3 div3 div3 div3'
-    'div4 div4 div4 div5 div5 div5'
     'footer footer footer footer footer footer';
 	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
 	grid-gap: 2px;
