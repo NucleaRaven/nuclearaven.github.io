@@ -76,7 +76,7 @@ body{
 	padding: 10px;
 }
 .grid-container > div{
-	background-color:hsl(0%, 0%, 0%);
+	background-color: hsl(0%, 0%, 0%);
 	padding: 20px 0;
 }/*grid*/
 p{
@@ -111,7 +111,6 @@ p{
 	border-style: solid;
 }/*image styling*/
 .youtube{
-	padding-left: 500;
 	border-color: #3677e3;
 	border-width: 8px;
 	border-style: solid;
