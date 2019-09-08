@@ -66,7 +66,7 @@ body{
     'footer footer footer footer footer footer';
 	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
 	grid-gap: 2px;
-	background-image: linear-gradient(165deg, #383838, #616161);
+	background-image: linear-gradient(165deg, #0f0f0f, #212121);
 	background-repeat: no-repeat;
 	overflow: hidden;
 	margin: auto;
