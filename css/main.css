@@ -76,7 +76,7 @@ body{
 	padding: 10px;
 }
 .grid-container > div{
-	background-color: hsl(0%, 0%, 0%);
+	background-color: rgba(0, 0, 0, 0);
 	padding: 20px 0;
 }/*grid*/
 p{

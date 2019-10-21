@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+    	<link rel="stylesheet" href="./css/main.css">
+    	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo%26display=swap">
+    	<meta charset="utf-8">
+    	<title>how to solve a rubik's cube</title>
+		<!-- i decided to do alot more than i probably should have. i hope you enjoy it tho, hopefully if you actually want to learn how to solve one of these, itl function nicely for you -->
+	</head>
+	<body>
+		<article class="accentHeader">
+			<header>
+				<h5>a project by nuclearaven</h5>
+			</header>
+		</article>
+		<div class="grid-container">
+	  		<div class="title accentTitle"><h1>how to solve a rubik's cube</h1></div>
+	  		<div class="div1"><h2 class=accent1>how the cube works</h2><br/>
+				<div class="accent1-1 content">
+					<img class="floatLeft imageDiv1" src="./assets/cube-original.jpg" width="200" alt="cubeOriginal">
+						this is a rubik's cube, a very famous and popular toy. also very frustrating, due to it's difficulty, as i'm sure you are aware.<br/>
+						you see here how the cube is solved? you can do this too!
+				</div>
+				<div class="accent1-1 content">
+					<img class="floatLeft imageDiv1" src="./assets/corner-piece.jpg" width="150" alt="cornerPiece">
+					<img class="floatLeft imageDiv1" src="./assets/cube-corners.jpg" width="200" alt="cubeCorners">
+						<p>the cube has 8 corner pieces. they each have 3 stickers on them. corner pieces MUST stay in the corners, it is phsyically
+						impossible for a corner piece to move to an edge or centre, and there is only 1 of each corner piece.
+						remember, you are solving pieces, NOT stickers.
+						</p>
+				</div>
+				<div class="accent1-1 content">
+					<img class="floatLeft imageDiv1" src="./assets/edge-piece.jpg" width="150" alt="edgePiece">
+					<img class="floatLeft imageDiv1" src="./assets/cube-edges.jpg" width="200" alt="cubeCorners">
+						<p>the cube has 12 edge pieces, each with 2 stickers on them. likewise with corners, edges cannot move from the edge, and
+						there is only 1 of each edge piece. there are not 2 Green/Red edges, only 1.
+						</p>
+				</div>
+				<div class="accent1-1 content">
+					<img class="floatLeft imageDiv1" src="./assets/cube-centres.jpg" width="200" alt="cubeCentres">
+						<p>lastly, the centres. the centres REPRESENT THE COLOUR OF THE FACE. if the centre sticker is blue, it is the blue face, regardless
+						of the other stickers on that face. the centres are locked in place, and will never change position. you can't swap the blue and red centres,
+						but you can rotate a group of 4 centres by turning a middle face.
+						</p>
+				</div>
+			</div>
+			<div class="div2"><h2 class=accent2>types of moves</h2><br/>
+				<div class="accent2-1 content">
+					<img class="floatLeft imageDiv2" src="./assets/move-r.gif" width="200" alt="R">
+						<p style="margin-top: 55px;">
+							this is the <strong>R</strong> layer. it is the right face of the cube. <br/>
+							note, the orientation of the cube does not matter.. whichever side is on the right is the R face.
+						</p>
+				</div>
+				<div class="accent2-1 content">
+					<img class="floatLeft imageDiv2" src="./assets/move-u.gif" width="200" alt="U">
+						<p style="margin-top: 92px;">
+							this is the <strong>U</strong> layer. it is the up face of the cube.
+						</p>
+				</div>
+				<div class="accent2-1 content">
+					<img class="floatLeft imageDiv2" src="./assets/move-l.gif" width="200" alt="L">
+						<p style="margin-top: 92px;">
+							this is the <strong>L</strong> layer. it is the left face of the cube.
+						</p>
+				</div>
+				<div class="accent2-1 content">
+					<img class="floatLeft imageDiv2" src="./assets/move-d.gif" width="200" alt="D">
+						<p style="margin-top: 92px;">
+							this is the <strong>D</strong> layer. it is the down face of the cube.
+						</p>
+				</div>
+				<div class="accent2-1 content">
+					<img class="floatLeft imageDiv2" src="./assets/move-f.gif" width="200" alt="F">
+						<p style="margin-top: 92px;">
+							this is the <strong>F</strong> layer. it is the front face of the cube.
+						</p>
+				</div>
+				<div class="accent2-1 content">
+					<img class="floatLeft imageDiv2" src="./assets/move-b.gif" width="200" alt="B">
+						<p style="margin-top: 92px;">
+							this is the <strong>B</strong> layer. it is the back face of the cube.
+						</p>
+				</div>
+				<div class="accent2-1 content">
+					<p>
+						each of these faces can be manipulated in different ways. if you turn that face clockwise, you designate that letter by itself.<br/>
+						&emsp; <strong>R U R U</strong> means you would turn the RIGHT face clockwise, the UP face clockwise, the RIGHT face clockwise again, and the UP face clockwise again.<br/>
+						if you turn the face counter-clockwise, you designate that letter with a ' symbol (known as a prime here)<br/>
+						&emsp; <strong>R U R' U'</strong> means you turn the RIGHT face clockwise, the UP face clockwise, the RIGHT face counter-clockwise, and then the UP face counter-clockwise.<br/>
+						if you turn the face twice, or 180&#176;, you assign a 2 to that letter.<br/>
+						&emsp; <strong>R U' D2 U R'</strong> means you would turn the R face clockwise, the U face counter-clockwise, the DOWN face twice, the U face clockwise, and the R face counter-clockwise.
+					</p>
+				</div>
+			</div>
+	  		<div class="div3"><h2 class=accent3>method</h2><br/>
+				<div class="accent3-1">
+					<h3>step 1</h3>
+				</div>
+				<div class="accent3-2">
+					<p>
+						the first step is to make a cross. you may start on any colour you like, but for this tutorial we will be creating a WHITE cross.<br/>
+						the aim of this step is to solve all white edge pieces. in other words, to place each white edge into its correct position, and orientation.<br/>
+						to form the white cross, you first move all WHITE edges to the yellow layer, with the white sticker facing up
+						(remember, the centre sticker determines the colour of the face).<br/><br/>
+							<img class="imageDiv3" src="./assets/cross1.jpg" width="200" alt="">
+						<br/>you then align each white edge to its corresponding centre. for example, the red sticker on the red/white edge should line up to
+						the red centre.<br/><br/>
+							<img class="imageDiv3" src="./assets/cross2.jpg" width="200" alt="">
+						<br/>then, simply turn that face twice to solve that edge. repeat this for all white edges, and you should have a complete white cross!<br/><br/>
+							<img class="imageDiv3" src="./assets/cross3.gif" width="200" alt="">
+						<br/>once you have done this, hold the cube so that the cross is on the bottom of the cube.<br/><br/>
+							<img class="imageDiv3" src="./assets/cross4.gif" width="200" alt="">
+					</p>
+				</div>
+				<div class="accent3-1">
+					<h3>step 2</h3>
+				</div>
+				<div class="accent3-2">
+					<p>
+						the second step is to solve the entire first layer. we continue on the side we did the cross on, if you solved the white cross, you now are solving
+						the rest of the white pieces to solve the first layer.<br/>
+						first, look for any white corner piece in the top layer (any corner with white on it).<br/><br/>
+						<img class="imageDiv3" src="./assets/first-layer1.jpg" width="200" alt=""><br/>
+						identify where that piece belongs. if its the Orange/White/Blue piece, it belongs in the corner that connect the Orange, White, and Blue layers.<br/>
+						next, position the cube so that the corner is on top of its correct position, and hold the cube with the white face down, and the corner you want to solve
+						on the right (as shown in picture).<br/><br/>
+						<img class="imageDiv3" src="./assets/first-layer2.jpg" width="200" alt=""><br/>
+						perform the following algorithm.<br/>
+						&emsp; <strong>R U R' U'.</strong><br/><br/>
+						<img class="imageDiv3" src="./assets/first-layer-gif1.gif" width="200" alt=""><br/>
+						repeat this algorithm as many times as needed until that piece is solved!<br/><br/>
+						<img class="imageDiv3" src="./assets/first-layer-gif2.gif" width="200" alt=""><br/>
+						continue this process until there are no white corners in the up face... but you may not be done yet!<br/>
+						you may encounter a situation where you already have a white corner in the white layer, but it isnt in its correct position or orientation, as shown here.<br/><br/>
+						<img class="imageDiv3" src="./assets/first-layer3.jpg" width="200" alt=""><br/>
+						to fix this, simply perfrom that same algorithm (R U R' U') once, to move that piece to the up layer, then solve it like you learned earlier.<br/>
+						if you have completed this step correctly, you will have solved the first layer!
+					</p>
+				</div>
+				<div class="accent3-1">
+					<h3>step 3</h3>
+				</div>
+				<div class="accent3-2">
+					<p>
+						the third step is to solve the entire second layer.<br/>
+						first, look for any edge pieces that do not have YELLOW on them (if you chose to start on a different colour, you look for any edges
+						that do not have the UP face colour on it... remember, hold the face you solved the cross on at the bottom.).<br/><br/>
+						<img class="imageDiv3" src="./assets/second-layer1.jpg" width="200" alt=""><br/>
+						then, move that piece so that the sticker on the front of the piece (not the one on the yellow face) matches up with the centre for that colour.<br/><br/>
+						<img class="imageDiv3" src="./assets/second-layer2.jpg" width="200" alt=""><br/>
+						this is a bit complicated, so please refer to the images and gifs provdided here to simplify this as much as possible.<br/>
+						identify where that piece has to go.<br/>
+						if it has to go to the right, you move the piece to the left, then, perform the following algorithm:<br/>
+						&emsp; <strong>R U R' U',</strong> rotate the whole cube so that the corner is on the left now. then <strong>L' U' L U.</strong><br/><br/>
+						<img class="imageDiv3" src="./assets/second-layer-gif1.gif" width="200" alt=""><br/>
+						together, thats R U R' U' rotate L' U' L U.<br/>
+						the L algorithm here is identical to the first one you learned, except you are using your left hand now, instead of your right.<br/><br/>
+						if the edge instead has to go the left, you move the piece to the right, then, perform the following algorithm:<br/>
+						&emsp; <strong>L' U' L U,</strong> rotate the whole cube so that the corner is on the right now. then <strong>R U R' U'.</strong><br/><br/>
+						<img class="imageDiv3" src="./assets/second-layer-gif2.gif" width="200" alt=""><br/>
+						this is the same algorithm as before, just in the other order. L' U' L U rotate R U R' U'.<br/>
+						repeat this step until there are no non-yellow pieces in the top layer... but again, you might not be done yet!<br/>
+						you may have a situation where you have an edge in the right spot, just around the wrong way... or, in the right layer, but in the wrong position.<br/><br/>
+						<img class="imageDiv3" src="./assets/second-layer3.jpg" width="200" alt=""><br/>
+						to fix this, move any other edge in the top layer into that piece, the same you would normally, in order to move the edge to the top.<br/><br/>
+						<img class="imageDiv3" src="./assets/second-layer-gif3.gif" width="200" alt=""><br/>
+						then, you can solve that edge as learned.<br/>
+						if done correctly, you will have solved the 2nd layer!!
+					</p>
+				</div>
+				<div class="accent3-1">
+					<h3>step 4</h3>
+				</div>
+				<div class="accent3-2">
+					<p>
+						the fourth step is to begin solving a cross on the yellow side (or up face). here, we will orient all of the yellow edges, or in other words,
+						get yellow facing up on each of the edge pieces. remember, the corners do not matter in this step.<br/>
+						there are 4 possible cases you can get, but you only need 1 algorithm to be able to do all them.<br/>
+						here is the algorithm:<br/>
+						&emsp; <strong>F R U R' U' F'.</strong><br/><br/>
+						<img class="imageDiv3" src="./assets/step4-gif.gif" width="200" alt=""><br/>
+						this is very similar to the first algorithm you learned, but, you add an F move at the start, and an F' move at the end<br/><br/>
+						here are the 4 possible cases:<br/>
+						this here is a line case. hold the cube as shown in the picture (with the line going across horizontally), then hold the cube with white facing down, and perform
+						the algorithm.<br/><br/>
+						<img class="imageDiv3" src="./assets/step4-1.jpg" width="200" alt=""><br/>
+						this is the L case. hold the cube as shown in the picture (with the L shape at the back+left of the cube), then hold the cube with white facing down, and perform
+						the algorithm. you will end up with the line case.<br/><br/>
+						<img class="imageDiv3" src="./assets/step4-2.jpg" width="200" alt=""><br/>
+						this here is a dot case. doesnt matter how you hold the cube, as long as white is facing down. perform the algorithm. you will end up with the L case<br/><br/>
+						<img class="imageDiv3" src="./assets/step4-3.jpg" width="200" alt=""><br/>
+						the 4th case you get is the solved case, which mean you can move on. this is what it looks like:<br/><br/>
+						<img class="imageDiv3" src="./assets/step4-4.jpg" width="200" alt=""><br/>
+						once you have done this, you may move onto the next step!
+					</p>
+				</div>
+				<div class="accent3-1">
+					<h3>step 5</h3>
+				</div>
+				<div class="accent3-2">
+					<p>
+						the fifth step is a continuation from step 4. in step 4 we oriented all of the yellow edges, now we will position them correctly, so that edge edge lines up with
+						its' correct centre.<br/>
+						the first part of this step is to find 2 edges that line correctly, it will like similar to this:<br/><br/>
+						<img class="imageDiv3" src="./assets/step5-1.jpg" width="200" alt=""><br/>
+						turn the top layer until you get this. if you don't get it after 4 rotations, thats ok too, it just means this step will take a little longer.<br/>
+						hold the 2 solved edges at the back and right, and white on the bottom, as shown, and perform the following algorithm:<br/>
+						&emsp; <strong>R U R' U R U2 R'.</strong>you may need to adjust the top layer after this to get the edges to line up<br/>
+						<img class="imageDiv3" src="./assets/step5-gif1.gif" width="200" alt=""><br/>
+						this may take a little practice to get right, but follow the video above and you will pick it up in no time!<br/>
+						one you have done this algorithm, check if you get all 4 yellow edges solved. if you do not, simply redo this step.<br/>
+						if you had the other 2 edges solved, where they are opposite each other instead of next to each other, like this:<br/><br/>
+						<img class="imageDiv3" src="./assets/step5-gif2.gif" width="200" alt=""><br/>
+						just perform the algorithm anyway, and you will end up with 2 edges correct. you can then start this step again and you should have a completed yellow cross!.<br/><br/>
+						<img class="imageDiv3" src="./assets/step5-gif3.gif" width="200" alt=""><br/>
+					</p>
+				</div>
+				<div class="accent3-1">
+					<h3>step 6</h3>
+				</div>
+				<div class="accent3-2">
+					<p>
+						the sixth step is now positioning the corners in the last layer. we have solved the edges, just the corners left.<br/>
+						check each corner to see if it is in the right position. you will know its right if the colours on the piece match up with the 3 colours around it.<br/>
+						it will look like this:<br/>
+						<img class="imageDiv3" src="./assets/step6-1.jpg" width="200" alt=""><br/>
+						you can either have 0 correctly positioned corners, 1, or 4. if its 4 you can skip this step.<br/>
+						if you have 1 corner in the right spot, hold the cube so that it is on the front/right, and with white on the bottom, like this:<br/><br/>
+						perform the following algorithm:<br/>
+						&emsp; <strong>U R U' L' U R' U' L.</strong> this may take a while to learn, but youll get there! i believe in you.<br/><br/>
+						<img class="imageDiv3" src="./assets/step6-gif1.gif" width="200" alt=""><br/>
+						you may need to repeat this a number of times before each corner is correctly positioned.<br/>
+						if you had 0 corners in the correct spot, like this:<br/><br/>
+						<img class="imageDiv3" src="./assets/step6-gif2.gif" width="200" alt=""><br/>
+						simply perform the algorithm anyway, and continue from there.<br/>
+						once you have all corners in the right spot, like this, you can move on. you are so close now!<br/><br/>
+						<img class="imageDiv3" src="./assets/step6-gif3.gif" width="200" alt=""><br/>
+					</p>
+				</div>
+				<div class="accent3-1">
+					<h3>step 7</h3>
+				</div>
+				<div class="accent3-2">
+					<p>
+						the seventh and final step will flip the last corners and solve the cube.<br/>
+						we have had white on the bottom for most of the solve, but here we flip it, so yellow is now on the bottom, like this:<br/><br/>
+						<img class="imageDiv3" src="./assets/step7-1.jpg" width="200" alt=""><br/>
+						all you need is one algorithm, the one you learnt during step 2 (R U R' U'), but you have to be careful... if you get this wrong, you will need to start again
+						from scratch!!<br/>
+						hold the cube so that an unsolved corner is on the bottom right, here:<br/>
+						peform the algorithm until it is correctly placed, but ignore the other layers. you only care about that one piece.<br/><br/>
+						<img class="imageDiv3" src="./assets/step7-gif1.gif" width="200" alt=""><br/>
+						once it is in the right spot, turn ONLY the down (D) layer until another unsolved piece is in that spot. then repeat that earlier step.<br/><br/>
+						<img class="imageDiv3" src="./assets/step7-gif2.gif" width="200" alt=""><br/>
+						remember, you have to turn ONLY the bottom layer. if you rotate the whole cube instead, this will not work.<br/>
+						once the remaining pieces have been correctly solved, you should have a completely solved rubik's cube. if you did this right, then congratulations, you earned it!!<br/>
+					</p>
+				</div>
+			</div>
+	  		<div class="footer">
+			<div class="accentFooter">
+				<p>this here is a video of me performing a solve.<br/><br/>
+				</p>
+				<iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/H1sBX_i-MHE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<br/><br/>
+				thankyou for visiting
+			</div>
+			</div>
+		</div>
+	</body>
+</html>
