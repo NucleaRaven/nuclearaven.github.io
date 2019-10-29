@@ -7,6 +7,56 @@ body{
 	font-family: 'Exo', sans-serif;
 	color: #f0f0f0;
 }/*deals with background and text*/
+a:link, a:visited {
+	color: #f0f0f0;
+	text-decoration: none;
+	padding: 14px 25px;
+	display: inline-block;
+	border-radius: 50px;
+	border-style: solid;
+	border-color: #3677e3;
+	border-width: 3px;
+}
+a:hover {
+	color: #f0f0f0;
+	text-decoration: underline;
+	padding: 14px 25px;
+	display: inline-block;
+	border-radius: 50px;
+	border-style: solid;
+	border-color: #3677e3;
+	border-width: 3px;
+}
+a:active {
+	color: #3f6c99;
+	text-decoration: none;
+	padding: 14px 25px;
+	display: inline-block;
+	border-radius: 50px;
+	border-style: solid;
+	border-color: #3677e3;
+	border-width: 3px;
+}
+.accentNav {
+	list-style-type: none;
+	text-align: center;
+	color: #f0f0f0;
+}
+
+/*page 1*/
+.landingBox {
+	background-image: linear-gradient(165deg, #0f0f0f, #212121);
+	background-repeat: no-repeat;
+	overflow: hidden;
+	margin: auto;
+	border-radius: 50px;
+	border-style: solid;
+	border-color: #3677e3;
+	border-width: 10px;
+	padding: 10px;
+}
+
+/*page 2*/
 .accentHeader{
 	text-align: right;
 	margin-right: auto;
