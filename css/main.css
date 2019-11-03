@@ -7,6 +7,18 @@ body{
 	font-family: 'Exo', sans-serif;
 	color: #f0f0f0;
 }/*deals with background and text*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+  text-align: center;
+}
 a:link, a:visited {
 	color: #f0f0f0;
 	background-color: #0f0f0f;
