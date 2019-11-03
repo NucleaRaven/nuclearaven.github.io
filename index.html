@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo%26display=swap">
 		<meta charset="utf-8">
 		<title>how to solve a rubik's cube</title>
+		<script src="script.js" type="text/javascript"></script>
 	</head>
 	<body>
 		<div class="accentNav"><nav>
@@ -18,13 +19,12 @@
 		</nav></div>
 		<div class="grid-container">
 			<div class="title accentTitle"><h1>how to solve a rubik's cube</h1></div>
-			<div class="">
-				<script src="script.js" type="text/javascript">
-					<form name="help">
-						<input type="text" type="submit" name="1">
-						<input type="text" type="submit" name="2">
-					</form>
-				</script>
+			<div class="div3">
+				<form name="help">
+					<input type="text" name="1" oninput="validation()">
+					<input type="text" name="2" oninput="validation()">
+					<input type="submit" id="submit" value="submit">
+				</form>
 			</div>
 		</div>
 		<article class="accentHeader">
