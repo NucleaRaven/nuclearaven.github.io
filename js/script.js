@@ -1,0 +1,1 @@
+object.oninput = function(){myScript};
