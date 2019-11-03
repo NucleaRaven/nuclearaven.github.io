@@ -7,3 +7,4 @@ if(box1!=""&&box2!=""){
     document.getElementById("submit").style.display="none";
 }
 }
+/*this took too long to learn but i got there*/
